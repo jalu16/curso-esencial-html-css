@@ -1,0 +1,49 @@
+  :root {
+    font-size: 18px;
+    /*--colorcito: red; custom properties*/
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+
+  }
+
+
+  body {
+    color: var(--gray30);
+    /*color: var(--colorcito);*/
+  }
+
+  a  {
+    color: var(--gray30);
+  }
+
+  header {
+    font-size: 14px;
+    color: #616161;
+  }
+
+  header a {
+  color: #616161;
+  text-decoration: underline;
+  }
+  header a:hover {
+    color: var(--gray30);
+  }
+
+  nav details summary{
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 60px;
+    /*text-decoration: underline;*/
+    /*font-size: 3.75em;*/
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
