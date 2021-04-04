@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: Charter;
   src: url('../fonts/charter-regular.otf');
@@ -47,8 +49,29 @@
   }
 
   header {
-    font-size: 14px;
-    color: var(--gray10);
+  /* --gray10: red; */
+  font-size: 14px;
+  width: 188px;
+  color: var(--gray10);
+  position: absolute;
+  /* right: 0; */
+  /* bottom: 0; */
+  top: 64px;
+  left: 32px;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* margin: 50px; */
+  /* top left bottom right z-index */
+  /* top: 200px; */
+  /* left: 30px; */
+  /* right: 50px;
+  bottom: 100px; */
+  z-index: 1;
+  /* position: absolute;
+  position: fixed;
+  position: sticky; */
   }
 
   header a {
@@ -59,9 +82,13 @@
     color: var(--gray30);
   }
 
-  nav details summary{
+  nav details summary {
     font-weight: bold;
+    /*line-height: ;*/
+  }
 
+  header li {
+    margin-bottom: 16px;
   }
 
   h1 {
@@ -76,6 +103,10 @@
     margin: 64px 10px 16px 20px;
     margin: 10px 5px;
     margin: 30px 20px 10px;*/
+    /*border: 10px solid red;
+    width: 400px;
+    height: 400px;
+    padding: 40px;*/
   }
 
  /* h1 ~ p {
@@ -97,6 +128,10 @@ hr {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    /*width: 300px;
+    padding: 20px;
+    border: 1px solid red;
+    box-sizing: border-box;*/
   }
 
 pre{
@@ -105,7 +140,7 @@ pre{
   font-family: 'Roboto';
   line-height: 24px;
 }
-blockquote{
+blockquote {
   font-size: 24px;
   margin: 32px 0;
   padding-left: 16px;
@@ -120,9 +155,50 @@ blockquote{
 blockquote span{
   color: var(--gray10);
   }
- blockquote span::before{
+blockquote span::before{
    content: '-';
- }
+}
+.header{
+  position: sticky;
+  top: 0;
+}
+.header-content {
+  position: relative;
+}
+
+.main {
+ /* background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../image/patron.png');*/
+}
+
+.wrapper {
+   width: 902px;
+   margin: auto;
+}
+.main-content {
+  background: white;
+  /*padding: 20px;*/
+}
+
+/*.title {
+  background: pink;
+}
+.service{
+  background: plum;
+
+}
+.pricing{
+  background:purple;
+}*/
+
+
+.debug {
+  box-shadow: inset 0 0 0 1px red;
+  outline: 1px solid red;
+  background: red;
+  /*border: 1px solid red important;
+  box-sizing: border-box;*/
+   }
+
   .hero {
     background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../image/patron.png');
     /*background-repeat: no-repeat;*/
@@ -132,6 +208,7 @@ blockquote span{
 }
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 .section-content:first-of-type{
   margin: 0;
@@ -157,17 +234,21 @@ blockquote span{
 .section-content h3 {
   counter-increment: titleList;
   /*background: red;*/
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before{
   content: counter(titleList, decimal) '. ';
 }
-.section-content h3::after{
-    content: ' ';
-    width: 32px;
-    height: 4px;
-    background: var(--gray30);
-    display: inline-block;
-}
 
+.section-content h3::after {
+  content: ' ';
+  width: 80px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  border: 1px solid red;
+  /*bottom: 0;*/
+}
