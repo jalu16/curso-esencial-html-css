@@ -84,7 +84,7 @@
 
   nav details summary {
     font-weight: bold;
-    /*line-height: ;*/
+    line-height: 24px;
   }
 
   header li {
@@ -207,8 +207,8 @@ blockquote span::before{
   height: 350px;
 }
 .section-content {
-  margin-top: 164px;
-  position: relative;
+  margin-top: 64px;
+
 }
 .section-content:first-of-type{
   margin: 0;
@@ -235,6 +235,7 @@ blockquote span::before{
   counter-increment: titleList;
   /*background: red;*/
   padding-bottom: 8px;
+  position: relative;
 }
 
 .section-content h3::before{
@@ -249,6 +250,6 @@ blockquote span::before{
   display: inline-block;
   position: absolute;
   left: 0;
-  border: 1px solid red;
-  /*bottom: 0;*/
+  /*border: 1px solid red;*/
+  bottom: 0;
 }

@@ -55,9 +55,8 @@ body {
 a  {
   color: var(--white30);
 }
+
 .header {
-position: sticky;
-inset-block-start: 40px;
   /* background: red;
   position: fixed; */
   /* inset: 50px; */
@@ -66,25 +65,16 @@ inset-block-start: 40px;
   /* block-size: 500px; */
   /* inline-size: 500px; */
 }
+
 .header-content{
-  position:relative;
-  inset-block-start: 30px;
+  padding: 20px;
 }
 
   header {
+    margin-block-start: 20px;
   /* --white10: red; */
   font-size: 14px;
   color: var(--white);
-  position: absolute;
-  /* top */
-  inset-block-start: 0;
-  /* bottom  */
-  /* inset-block-end: ; */
-  /* left  */
-  inset-inline-start: 30px;
-  /* right  */
-  /* inset-inline-end: ; */
-  inline-size: -10px;
 }
 
 header li {
@@ -101,6 +91,7 @@ header a {
   /* text-decoration: underline; */
   /* font-size: 3.75em; */
 }
+
 header a:hover {
   color: var(--white30);
 }
@@ -110,8 +101,8 @@ nav details summary{
 }
 
 h1 {
-  font-size: 60px;
-  margin-block-start: 64px;
+  font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
   /* text-decoration: underline; */
   /* font-size: 3.75em; */
@@ -159,7 +150,7 @@ pre{
   /*background-repeat: no-repeat;*/
   /*background-position: left 50px bottom -50px;*/
   /*background-size: cover;*/
-height: 350px;
+  block-size: 50px;
 }
 
 .section-content img {
@@ -269,8 +260,8 @@ blockquote p {
   background: #251F24;
   box-sizing: border-box;
   border-radius: 8px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  padding: 16px;
+  padding: 12px;
   color: var(--white30);
   font-size: 16px;
   display: block;
@@ -284,4 +275,33 @@ blockquote p {
 
 .form input::-webkit-input-placeholder {
   color: var(--white20)
+}
+
+
+@media screen and (min-width: 1300px) {
+.hero {
+  block-size: 350px;
+}
+
+.header {
+position:sticky;
+inset-block-start: 40px;
+
+}
+.header-content{
+  position:relative;
+  inset-block-start: 30px;
+  padding: 0;
+}
+
+header {
+  font-size: 14px;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 30px;
+  inline-size: -10px;
+}
+h1 {
+  font-size: 60px;
+  margin-block-start: 64px;
 }
